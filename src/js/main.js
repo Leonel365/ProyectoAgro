@@ -77,62 +77,7 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
   }
 })
 
-// eslint-disable-next-line no-unused-vars
-const cardChart2 = new Chart(document.getElementById('card-chart2'), {
-  type: 'line',
-  data: {
-    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'],
-    datasets: [
-      {
-        label: 'My First dataset',
-        backgroundColor: 'transparent',
-        borderColor: 'rgba(255,255,255,.55)',
-        pointBackgroundColor: coreui.Utils.getStyle('--cui-info'),
-        data: [1, 18, 9, 17, 34, 22, 11]
-      }
-    ]
-  },
-  options: {
-    plugins: {
-      legend: {
-        display: false
-      }
-    },
-    maintainAspectRatio: false,
-    scales: {
-      x: {
-        grid: {
-          display: false,
-          drawBorder: false
-        },
-        ticks: {
-          display: false
-        }
-      },
-      y: {
-        min: -9,
-        max: 39,
-        display: false,
-        grid: {
-          display: false
-        },
-        ticks: {
-          display: false
-        }
-      }
-    },
-    elements: {
-      line: {
-        borderWidth: 1
-      },
-      point: {
-        radius: 4,
-        hitRadius: 10,
-        hoverRadius: 4
-      }
-    }
-  }
-})
+
 
 // eslint-disable-next-line no-unused-vars
 const cardChart3 = new Chart(document.getElementById('card-chart3'), {
